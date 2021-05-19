@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Create a Debate</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">Lets Debate</h1>
+            <p class="lead text-muted"> - One stop place to debate with anyone</p>
+        </div>
+    </div>
+    <div class="container">
+        <nav class="navbar navbar-dark bg-dark">
+          <a href="/">
+              <button type="button" class="btn btn-primary" name="home" id="btn_home">Home</button>
+          </a>
+          <% if (currentUser) { %>
+          <a href="/logout">
+              <button type="button" class="btn btn-primary" name="logout" id="btn_logout">Logout</button>
+          </a>
+           <% } else { %>
+          <a class="navbar-brand" href="/signup">
+              <button type="button" class="btn btn-primary btn-lg" name="signup" id="btn_signup">Signup</button>
+          </a>
+          <a class="navbar-brand" href="/login">
+              <button type="button" class="btn btn-primary btn-lg" name="login" id="btn_login">Login</button>
+          </a>
+          <% } %>
+        </nav>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 main">
+                <form action="/create_debate" method="post">
+                <h1 class="display-2 text-center">Create a New Debate</h1>
+                <br>
+                <label for="title" class="lead">Title:</label>
+                <input name="title" type="text" placeholder="Debate Title" required autofocus>
+                <label for="topic" class="lead">Topic:</label>
+                <input name="topic" type="text" placeholder="Topic" required>
+                <br><br>
+                <input type="submit" value="Create" name="submit_debate" id="submit_debate" class="btn btn-primary btn-lg btn-sub">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+</head>
+<body>

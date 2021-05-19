@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Signup Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">Lets Debate</h1>
+            <p class="lead text-muted"> - One stop place to debate with anyone</p>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 main">
+                <form action="/signup" method="post">
+                <h1 class="display-4 text-center">Sign Up Form</h1>
+                <br>
+                <label for="first_name" class="lead">First Name:</label>
+                <input name="first_name" type="text" placeholder="Firstname" required autofocus>
+                <label for="last_name" class="lead">Last Name:</label>
+                <input name="last_name" type="text" placeholder="Lastname" required>
+                <label for="email_id" class="lead">Email:</label>
+                <input name="email_id" type="email" placeholder="Email" required>
+                <label for="password" class="lead">Password:</label>
+                <input name="password" type="password" placeholder="Password" required>
+                <br><br>
+                <input type="submit" value="Sign up" name="submit_signup" id="submit_signup" class="btn btn-primary btn-lg btn-sub">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

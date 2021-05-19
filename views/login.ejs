@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Login Page</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <br>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4 text-center">Lets Debate</h1>
+            <p class="lead text-muted"> - One stop place to debate with anyone</p>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 main">
+                <form action="/login" method="post">
+                <h1 class="display-2 text-center">Login Form</h1>
+                <br>
+                <label for="email_id" class="lead">Email:</label>
+                <input name="email_id" type="email" placeholder="Email" required autofocus>
+                <label for="password" class="lead">Password:</label>
+                <input name="password" type="password" placeholder="Password" required>
+                <br><br>
+                <input type="submit" value="Login" name="submit_login" id="submit_login" class="btn btn-primary btn-lg btn-sub">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
